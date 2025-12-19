@@ -10,16 +10,19 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public void VisualTransformChange(WheelCollider wheelcollider)
     {
         Transform Visual = wheelcollider.transform.GetChild(0);
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+        Vector3 Position;
+        Quaternion Rotation;
 
-    // Update is called once per frame
-    void Update()
+        wheelcollider.GetWorldPose(out Position, out Rotation);
+        Visual.transform.position = Position;
+        Visual.transform.rotation = Rotation;
+    }
+    
+    void FixedUpdate()
     {
-        
+        foreach (var wheel in _wheelColliders)
+        {
+            VisualTransformChange(wheel);
+        }
     }
 }
