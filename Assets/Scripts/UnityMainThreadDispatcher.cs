@@ -48,7 +48,6 @@ public class UnityMainThreadDispatcher : MonoBehaviour
             {
                 try
                 {
-                    Debug.Log("Executing action on main thread. Remaining queue size: " + (_executionQueue.Count - 1));
                     _executionQueue.Dequeue().Invoke();
                 }
                 catch (Exception ex)

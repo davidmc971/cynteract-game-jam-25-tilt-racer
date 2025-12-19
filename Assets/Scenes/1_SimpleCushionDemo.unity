@@ -1644,6 +1644,63 @@ Transform:
   - {fileID: 264287176}
   m_Father: {fileID: 17598392}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1631302780
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 62.502956
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -35.63875
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.517764
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180524957153514538, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790938641919234724, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
+      propertyPath: m_Name
+      value: KartCushionInput
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2fdecd8f98dafdb4289936cd9a087e2c, type: 3}
 --- !u!1 &1649881180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1675909331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2318,3 +2375,4 @@ SceneRoots:
   - {fileID: 1129523438}
   - {fileID: 1898733790}
   - {fileID: 1978792887}
+  - {fileID: 1631302780}

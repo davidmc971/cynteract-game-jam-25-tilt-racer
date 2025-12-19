@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
 public class ArcadeCartController : MonoBehaviour
@@ -20,9 +21,13 @@ public class ArcadeCartController : MonoBehaviour
     Rigidbody rb;
     float currentSpeed;
     bool isDrifting;
+    InputAction moveAction;
 
     void Awake()
     {
+        moveAction = InputSystem.actions.FindAction("Move");
+        moveAction.Enable();
+
         rb = GetComponent<Rigidbody>();
     }
 
@@ -35,7 +40,7 @@ public class ArcadeCartController : MonoBehaviour
 
     void HandleMove()
     {
-        float inputForwardBackward = Input.GetAxisRaw("Vertical");
+        float inputForwardBackward = moveAction.ReadValue<Vector2>().y;
         Vector3 flatForward = Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
 
         currentSpeed = Vector3.Dot(rb.linearVelocity, flatForward);
@@ -58,7 +63,7 @@ public class ArcadeCartController : MonoBehaviour
 
     void HandleSteerAndDrift()
     {
-        float inputLeftRight = Input.GetAxisRaw("Horizontal");
+        float inputLeftRight = moveAction.ReadValue<Vector2>().x;
 
         bool driftPressed = Input.GetKey(driftKey);
         isDrifting = driftPressed && Mathf.Abs(inputLeftRight) > 0.1f && Mathf.Abs(currentSpeed) > 5f;
