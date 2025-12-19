@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 331588138}
   - component: {fileID: 331588137}
   - component: {fileID: 331588136}
+  - component: {fileID: 331588142}
   m_Layer: 0
   m_Name: Kart
   m_TagString: Untagged
@@ -275,13 +276,26 @@ Transform:
   m_LocalScale: {x: 1.5, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 450839509}
-  - {fileID: 680148957}
-  - {fileID: 1716378941}
-  - {fileID: 1258507568}
   - {fileID: 1265640854}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &331588142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331588135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096cde6ad03833abca23d5c485af5c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheelColliders:
+  - {fileID: 680148963}
+  - {fileID: 1716378947}
+  - {fileID: 1258507574}
+  - {fileID: 450839515}
 --- !u!1 &450839508
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,12 +326,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 450839508}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.501, y: -0.56, z: 0.261}
-  m_LocalScale: {x: 0.75, y: 0.05, z: 0.2}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.50100005, y: -0.56, z: 0.261}
+  m_LocalScale: {x: 0.75000006, y: 0.05, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 331588141}
+  m_Father: {fileID: 1265640854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &450839510
 MonoBehaviour:
@@ -515,12 +529,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680148956}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.501, y: -0.56, z: -0.261}
-  m_LocalScale: {x: 0.75, y: 0.05, z: 0.2}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.50100005, y: -0.56, z: -0.261}
+  m_LocalScale: {x: 0.75000006, y: 0.05, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 331588141}
+  m_Father: {fileID: 1265640854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!54 &680148958
 Rigidbody:
@@ -827,12 +841,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258507567}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.501, y: -0.56, z: 0.261}
-  m_LocalScale: {x: 0.75, y: 0.05, z: 0.2}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.50100005, y: -0.56, z: 0.261}
+  m_LocalScale: {x: 0.75000006, y: 0.05, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 331588141}
+  m_Father: {fileID: 1265640854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!54 &1258507569
 Rigidbody:
@@ -1029,7 +1043,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 450839509}
+  - {fileID: 1258507568}
+  - {fileID: 680148957}
+  - {fileID: 1716378941}
   m_Father: {fileID: 331588141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &1265640855
@@ -1101,12 +1119,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716378940}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.501, y: -0.56, z: -0.261}
-  m_LocalScale: {x: 0.75, y: 0.05, z: 0.2}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.50100005, y: -0.56, z: -0.261}
+  m_LocalScale: {x: 0.75000006, y: 0.05, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 331588141}
+  m_Father: {fileID: 1265640854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!54 &1716378942
 Rigidbody:
